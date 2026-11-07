@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" fill="none">
+  <defs>
+    <linearGradient id="heroBg" x1="120" y1="80" x2="690" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6C5CE7"/>
+      <stop offset="1" stop-color="#3B2FA6"/>
+    </linearGradient>
+    <linearGradient id="cardShine" x1="240" y1="210" x2="560" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F1EEFF"/>
+    </linearGradient>
+    <linearGradient id="success" x1="300" y1="440" x2="540" y2="570" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#37D6A0"/>
+      <stop offset="1" stop-color="#12A97A"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="580" y1="120" x2="720" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD166"/>
+      <stop offset="1" stop-color="#FF9F43"/>
+    </linearGradient>
+  </defs>
+  <circle cx="400" cy="400" r="330" fill="url(#heroBg)"/>
+  <circle cx="637" cy="177" r="108" fill="#FFFFFF" fill-opacity="0.08"/>
+  <circle cx="147" cy="612" r="146" fill="#FFFFFF" fill-opacity="0.06"/>
+  <path d="M147 247C196 167 307 148 374 200" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 18"/>
+  <path d="M620 535C653 596 624 665 565 686" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 18"/>
+
+  <!-- floating back card -->
+  <g transform="rotate(-7 250 310)">
+    <rect x="132" y="214" width="252" height="188" rx="28" fill="#FFFFFF" fill-opacity="0.16"/>
+    <rect x="160" y="246" width="118" height="14" rx="7" fill="#FFFFFF" fill-opacity="0.55"/>
+    <rect x="160" y="276" width="178" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.28"/>
+    <rect x="160" y="299" width="148" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.28"/>
+    <rect x="160" y="336" width="108" height="32" rx="16" fill="#FFD166"/>
+  </g>
+
+  <!-- main quiz card -->
+  <g>
+    <rect x="218" y="196" width="404" height="432" rx="40" fill="#000000" fill-opacity="0.18"/>
+    <rect x="208" y="180" width="404" height="432" rx="40" fill="url(#cardShine)"/>
+    <rect x="252" y="224" width="88" height="28" rx="14" fill="#EDE9FF"/>
+    <circle cx="268" cy="238" r="5" fill="#6C5CE7"/>
+    <rect x="280" y="234" width="46" height="8" rx="4" fill="#6C5CE7" fill-opacity="0.65"/>
+    <rect x="252" y="278" width="282" height="20" rx="10" fill="#2B2552"/>
+    <rect x="252" y="310" width="208" height="20" rx="10" fill="#2B2552" fill-opacity="0.9"/>
+    <rect x="252" y="358" width="316" height="54" rx="18" fill="#F5F2FF" stroke="#E5DEFF" stroke-width="2"/>
+    <circle cx="282" cy="385" r="12" fill="#FFFFFF" stroke="#C9BFFF" stroke-width="3"/>
+    <rect x="308" y="379" width="174" height="12" rx="6" fill="#B7AEDB"/>
+    <rect x="252" y="424" width="316" height="54" rx="18" fill="url(#success)"/>
+    <circle cx="282" cy="451" r="12" fill="#FFFFFF"/>
+    <path d="M276 451L280 455L289 446" stroke="#12A97A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="308" y="445" width="144" height="12" rx="6" fill="#FFFFFF" fill-opacity="0.92"/>
+    <rect x="252" y="490" width="316" height="54" rx="18" fill="#F5F2FF" stroke="#E5DEFF" stroke-width="2"/>
+    <circle cx="282" cy="517" r="12" fill="#FFFFFF" stroke="#C9BFFF" stroke-width="3"/>
+    <rect x="308" y="511" width="120" height="12" rx="6" fill="#B7AEDB"/>
+    <rect x="252" y="558" width="104" height="10" rx="5" fill="#D9D2F2"/>
+    <rect x="252" y="575" width="196" height="10" rx="5" fill="#E8E3F7"/>
+  </g>
+
+  <!-- check badge -->
+  <g>
+    <circle cx="592" cy="540" r="73" fill="#170F4A" fill-opacity="0.22"/>
+    <circle cx="584" cy="530" r="68" fill="#FFD166"/>
+    <path d="M552 530L574 552L618 505" stroke="#2B2552" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- lightbulb -->
+  <g>
+    <circle cx="620" cy="216" r="66" fill="url(#spark)"/>
+    <path d="M620 178C643 178 662 197 662 220C662 235 654 248 643 257C637 262 634 269 634 276H606C606 269 603 262 597 257C586 248 578 235 578 220C578 197 597 178 620 178Z" fill="#2B2552"/>
+    <rect x="607" y="282" width="26" height="7" rx="3.5" fill="#2B2552"/>
+    <rect x="610" y="294" width="20" height="6" rx="3" fill="#2B2552"/>
+    <path d="M605 221C605 211 612 204 622 204" stroke="#FFD166" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- sparkles -->
+  <path d="M176 166L184 188L206 196L184 204L176 226L168 204L146 196L168 188L176 166Z" fill="#FFD166"/>
+  <path d="M686 381L691 394L704 399L691 404L686 417L681 404L668 399L681 394L686 381Z" fill="#FFFFFF" fill-opacity="0.9"/>
+  <path d="M362 102L366 112L376 116L366 120L362 130L358 120L348 116L358 112L362 102Z" fill="#FFD166"/>
+  <circle cx="170" cy="466" r="10" fill="#37D6A0"/>
+  <circle cx="690" cy="640" r="8" fill="#FFD166"/>
+</svg>

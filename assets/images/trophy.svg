@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" fill="none">
+  <defs>
+    <linearGradient id="halo" x1="150" y1="110" x2="650" y2="690" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF3D6"/>
+      <stop offset="1" stop-color="#FFE0A3"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="306" y1="218" x2="512" y2="548" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD166"/>
+      <stop offset="0.55" stop-color="#FFB020"/>
+      <stop offset="1" stop-color="#F28A0F"/>
+    </linearGradient>
+    <linearGradient id="goldDark" x1="350" y1="470" x2="450" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E5890D"/>
+      <stop offset="1" stop-color="#C86B05"/>
+    </linearGradient>
+  </defs>
+  <circle cx="400" cy="400" r="320" fill="url(#halo)"/>
+  <circle cx="400" cy="400" r="248" fill="#FFFFFF" fill-opacity="0.45"/>
+  <path d="M168 293C196 235 249 197 308 188" stroke="#F4B740" stroke-width="9" stroke-linecap="round"/>
+  <path d="M642 500C611 564 552 606 490 617" stroke="#F4B740" stroke-width="9" stroke-linecap="round"/>
+  <path d="M661 300L668 318L686 325L668 332L661 350L654 332L636 325L654 318L661 300Z" fill="#FFB020"/>
+  <path d="M148 470L154 485L169 491L154 497L148 512L142 497L127 491L142 485L148 470Z" fill="#37D6A0"/>
+  <circle cx="244" cy="209" r="10" fill="#6C5CE7"/>
+  <circle cx="637" cy="393" r="7" fill="#FF6B6B"/>
+
+  <!-- confetti -->
+  <rect x="205" y="535" width="22" height="10" rx="5" transform="rotate(-28 205 535)" fill="#6C5CE7"/>
+  <rect x="575" y="240" width="22" height="10" rx="5" transform="rotate(32 575 240)" fill="#37D6A0"/>
+  <rect x="565" y="555" width="20" height="9" rx="4.5" transform="rotate(-18 565 555)" fill="#FF6B6B"/>
+  <rect x="238" y="345" width="18" height="8" rx="4" transform="rotate(42 238 345)" fill="#FFD166"/>
+
+  <!-- trophy -->
+  <path d="M306 219H494V337C494 445 440 509 400 509C360 509 306 445 306 337V219Z" fill="url(#gold)"/>
+  <path d="M306 252H252C252 348 274 410 336 426" stroke="#E5890D" stroke-width="24" stroke-linecap="round"/>
+  <path d="M494 252H548C548 348 526 410 464 426" stroke="#E5890D" stroke-width="24" stroke-linecap="round"/>
+  <path d="M334 245H466V334C466 409 432 461 400 461C368 461 334 409 334 334V245Z" fill="#FFD166" fill-opacity="0.34"/>
+  <path d="M400 286L414 315L446 319L422 341L429 373L400 357L371 373L378 341L354 319L386 315L400 286Z" fill="#FFFFFF"/>
+  <rect x="376" y="500" width="48" height="57" rx="12" fill="url(#goldDark)"/>
+  <rect x="322" y="548" width="156" height="38" rx="16" fill="url(#goldDark)"/>
+  <rect x="286" y="578" width="228" height="42" rx="18" fill="#2B2552"/>
+  <rect x="316" y="590" width="168" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.25"/>
+  <path d="M350 220H450" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="7" stroke-linecap="round"/>
+</svg>
