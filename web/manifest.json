@@ -1,0 +1,35 @@
+{
+    "name": "Kuis Cendekia",
+    "short_name": "Kuis Cendekia",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#F7F5FF",
+    "theme_color": "#5A45D6",
+    "description": "Kuis Cendekia - kuis pilihan ganda dengan pembahasan, riwayat skor, dan tema terang/gelap.",
+    "orientation": "any",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
