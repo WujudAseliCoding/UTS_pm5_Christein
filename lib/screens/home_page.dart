@@ -254,28 +254,6 @@ class _HeroSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Wrap(
-          spacing: context.rs(8),
-          runSpacing: context.rs(8),
-          children: <Widget>[
-            const AppBadge(
-              label: '30 soal lokal',
-              icon: Icons.quiz_outlined,
-            ),
-            AppBadge(
-              label: '3 kategori',
-              icon: Icons.category_outlined,
-              foreground: palette.warning,
-              background: palette.softWarning,
-            ),
-            AppBadge(
-              label: 'Tanpa database',
-              icon: Icons.offline_bolt_outlined,
-              foreground: palette.success,
-              background: palette.softSuccess,
-            ),
-          ],
-        ),
         SizedBox(height: context.rs(16)),
         Text.rich(
           TextSpan(
@@ -317,43 +295,6 @@ class _HeroSection extends StatelessWidget {
               semanticsLabel:
                   'Ilustrasi kartu kuis dengan jawaban benar dan lampu ide',
             ),
-          ),
-        ),
-        SizedBox(height: context.rs(8)),
-        Wrap(
-          spacing: context.rs(14),
-          runSpacing: context.rs(8),
-          children: const <Widget>[
-            _HeroPoint(icon: Icons.touch_app_rounded, label: 'Mudah dipakai'),
-            _HeroPoint(icon: Icons.insights_rounded, label: 'Skor instan'),
-            _HeroPoint(
-              icon: Icons.menu_book_rounded,
-              label: 'Ada pembahasan',
-            ),
-          ],
-        ),
-      ],
-    );
-  }
-}
-
-class _HeroPoint extends StatelessWidget {
-  const _HeroPoint({required this.icon, required this.label});
-
-  final IconData icon;
-  final String label;
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: <Widget>[
-        Icon(icon, size: context.rs(17), color: context.palette.success),
-        SizedBox(width: context.rs(6)),
-        Text(
-          label,
-          style: Theme.of(context).textTheme.bodySmall?.copyWith(
-            color: context.palette.mutedText,
           ),
         ),
       ],
@@ -778,18 +719,6 @@ class _Footer extends StatelessWidget {
           children: <Widget>[
             Text(
               'Kuis Cendekia • v1.0.0',
-              style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                color: context.palette.mutedText,
-              ),
-            ),
-            Text(
-              '•',
-              style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                color: context.palette.mutedText,
-              ),
-            ),
-            Text(
-              'Data lokal, tanpa database',
               style: Theme.of(context).textTheme.bodySmall?.copyWith(
                 color: context.palette.mutedText,
               ),
