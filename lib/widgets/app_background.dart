@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../core/theme/app_palette.dart';
 import '../core/utils/responsive.dart';
 
-/// Soft gradient canvas with decorative blobs, shared by every page.
+/// Soft gradient canvas shared by every page.
 class AppBackground extends StatelessWidget {
   const AppBackground({super.key, required this.child});
 
@@ -23,70 +23,7 @@ class AppBackground extends StatelessWidget {
           ],
         ),
       ),
-      child: Stack(
-        fit: StackFit.expand,
-        children: <Widget>[
-          LayoutBuilder(
-            builder: (context, constraints) {
-              final shortest = constraints.biggest.shortestSide;
-              final primary = shortest * 0.9;
-              final secondary = shortest * 0.65;
-              return IgnorePointer(
-                child: Stack(
-                  children: <Widget>[
-                    Positioned(
-                      top: -primary * 0.32,
-                      right: -primary * 0.2,
-                      child: _Blob(
-                        size: primary,
-                        color: palette.blobPrimary,
-                      ),
-                    ),
-                    Positioned(
-                      bottom: -secondary * 0.4,
-                      left: -secondary * 0.3,
-                      child: _Blob(
-                        size: secondary,
-                        color: palette.blobSecondary,
-                      ),
-                    ),
-                    Positioned(
-                      top: constraints.maxHeight * 0.46,
-                      left: constraints.maxWidth * 0.58,
-                      child: _Blob(
-                        size: secondary * 0.7,
-                        color: palette.blobPrimary.withValues(alpha: 0.5),
-                      ),
-                    ),
-                  ],
-                ),
-              );
-            },
-          ),
-          child,
-        ],
-      ),
-    );
-  }
-}
-
-class _Blob extends StatelessWidget {
-  const _Blob({required this.size, required this.color});
-
-  final double size;
-  final Color color;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: size,
-      height: size,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        gradient: RadialGradient(
-          colors: <Color>[color, color.withValues(alpha: 0)],
-        ),
-      ),
+      child: child,
     );
   }
 }
